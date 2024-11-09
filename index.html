@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proof of Concepts (POCs) Tutorials</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .left, .right {
+            width: 48%;
+        }
+
+        .left img, .right img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tutorial-section {
+            margin-top: 40px;
+        }
+
+        .tutorial-section h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .tutorial {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .tutorial .left {
+            width: 48%;
+            padding-right: 20px;
+        }
+
+        .tutorial .right {
+            width: 48%;
+        }
+
+        .tutorial .left p {
+            color: #555;
+        }
+
+        .reference-url {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Proof of Concepts (POCs) Tutorials</h1>
+    </header>
+
+    <div class="content">
+        <div class="right">
+            <input type="file" id="imageInput" onchange="previewImage()" accept="image/*">
+            <p>Select an image to upload</p>
+            <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
+        </div>
+        <div class="left">
+            <h2>Summary</h2>
+            <p>This website showcases a collection of Proof of Concept (POC) tutorials. The tutorials focus on automating infrastructure management using tools such as Terraform, GitHub Actions, and AWS. Each tutorial includes practical examples, images, and links to the corresponding GitHub repositories where the code and documentation are stored.</p>
+        </div>
+    </div>
+
+    <div class="tutorial-section">
+        <h2>Our Tutorials</h2>
+
+        <!-- Tutorial 1 -->
+        <div class="tutorial">
+            <div class="left">
+                <p>This is a demo tutorial which demonstrates how to create an S3 bucket in AWS using Terraform. The tutorial includes step-by-step instructions for setting up the infrastructure and automating deployments with GitHub Actions.</p>
+            </div>
+            <div class="right">
+                <img src="https://github.com/pkourampas/terraform-github-actions-demo/blob/main/attachments/s3-bucket.drawio.png" alt="S3 Setup Image">
+            </div>
+        </div>
+        <div class="reference-url">
+            <p>Reference: <a href="https://github.com/pkourampas/terraform-github-actions-demo/blob/main/README.md" target="_blank">Demo Tutorial Readme</a></p>
+        </div>
+
+        <!-- Tutorial 2 -->
+        <div class="tutorial">
+            <div class="left">
+                <p>This tutorial guides you through the deployment of a Three-Tier Architecture using AWS, Terraform, and GitHub Actions. The focus is on creating a scalable and secure infrastructure setup.</p>
+            </div>
+            <div class="right">
+                <img src="https://via.placeholder.com/400x300" alt="Three-Tier Architecture">
+            </div>
+        </div>
+        <div class="reference-url">
+            <p>Reference: <a href="https://github.com/example/repo-three-tier" target="_blank">GitHub - Three-Tier Architecture</a></p>
+        </div>
+
+        <!-- Tutorial 3 -->
+        <div class="tutorial">
+            <div class="left">
+                <p>This tutorial introduces how to integrate Prometheus and Grafana for monitoring AWS infrastructure deployed via Terraform. It covers installation, configuration, and visualization of system metrics.</p>
+            </div>
+            <div class="right">
+                <img src="https://via.placeholder.com/400x300" alt="Prometheus Grafana Setup">
+            </div>
+        </div>
+        <div class="reference-url">
+            <p>Reference: <a href="https://github.com/example/repo-prometheus-grafana" target="_blank">GitHub - Prometheus Grafana Integration</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Proof of Concepts Tutorials</p>
+    </footer>
+
+    <script>
+        // JavaScript function to preview the uploaded image
+        function previewImage() {
+            const file = document.getElementById("imageInput").files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const imagePreview = document.getElementById("imagePreview");
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            };
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+
+</body>
+</html>
