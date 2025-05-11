@@ -96,10 +96,9 @@
 
     <div class="content">
         <div class="right">
-            <input type="file" id="imageInput" onchange="previewImage()" accept="image/*">
-            <p>Select an image to upload</p>
-            <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
+            <img id="imagePreview" src="image/PoC.png" alt="Image Preview" style="max-width: 600px; display: block; margin-bottom: 10px;">
         </div>
+    
         <div class="left">
             <h2>Summary</h2>
             <p>This website showcases a collection of Proof of Concept (POC) tutorials. The tutorials focus on automating infrastructure management using tools such as Terraform, GitHub Actions, and AWS. Each tutorial includes practical examples, images, and links to the corresponding GitHub repositories where the code and documentation are stored.</p>
@@ -107,26 +106,38 @@
     </div>
 
     <div class="tutorial-section">
-        <h2>Our Tutorials</h2>
+        <h2>Tutorials</h2>
 
         <!-- Tutorial 1 -->
         <div class="tutorial">
-            <div class="left">
-                <p>This is a demo tutorial which demonstrates how to create an S3 bucket in AWS using Terraform. The tutorial includes step-by-step instructions for setting up the infrastructure and automating deployments with GitHub Actions.</p>
+            <div style="width: 60%; margin: 0 auto; text-align: left;">
+                <p>
+                    This is a demo tutorial which demonstrates how to create an S3 bucket in AWS using Terraform. The tutorial includes step-by-step instructions for setting up the infrastructure and automating deployments with GitHub Actions.
+                </p>
+                <p>
+                    Here is the link to redirect you to the 
+                    <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab" target="_blank">
+                        AWS Terraform GithubActions Demo Lab
+                    </a>,
+                    and also go through the 
+                    <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab/blob/main/README.md" target="_blank">
+                        <code>README.md</code>
+                    </a> 
+                    file for more information about it.
+                </p>
             </div>
             <div class="right">
-                <img src="https://github.com/pkourampas/aws-terraform-gha-demo-lab.git/blob/main/attachments/s3-bucket.drawio.png" alt="S3 Setup Image">
+                <img src="/tutorials/s3-bucket.drawio.png" alt="S3 Setup Image">
             </div>
         </div>
-        <div class="reference-url">
-            <p>Reference: <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab.git/blob/main/README.md" target="_blank">Demo Tutorial Readme</a></p>
+       
+        <div style="text-align: center;">
+            <a href="about.html">About</a>
         </div>
 
 
-        <a href="about.html">About</a>
-
     <footer>
-        <p>&copy; Proof of Concepts Tutorials</p>
+        <p>&copy; License of pkourampas</p>
     </footer>
 
     <script>
