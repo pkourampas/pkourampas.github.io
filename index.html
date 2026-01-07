@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terraform & GitHub Actions Lab Showcase</title>
+  <title>Petros Kourampas | DevOps LabHub Portfolio</title>
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- LinkedIn Profile Badge Script -->
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
   <style>
     /* === Global Styles === */
     * {
@@ -14,7 +20,6 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
       background: linear-gradient(180deg, #f8faff 0%, #eef3ff 100%);
       color: #333;
     }
@@ -45,39 +50,55 @@
       font-weight: 700;
     }
 
-    /* === Main Content === */
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
-      margin: 40px auto;
+    header p {
+      margin: 10px 0 20px;
+      font-weight: 500;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: 600;
+      color: white;
+    }
+
+    /* === Section Base === */
+    section {
+      margin: 60px auto;
       max-width: 1200px;
       padding: 0 20px;
     }
 
-    .left, .right {
-      flex: 1 1 48%;
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #222;
+    }
+
+    /* === Cards / Animations (Preserved) === */
+    .card {
       background-color: white;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 25px;
+      margin-bottom: 30px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .left:hover, .right:hover {
+    .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     }
 
-    .left h2 {
-      color: #007BFF;
-      margin-bottom: 15px;
+    /* === Home Layout === */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
     }
 
-    .left p {
-      color: #555;
-      line-height: 1.6;
+    .left, .right {
+      flex: 1 1 48%;
     }
 
     .right img {
@@ -86,55 +107,16 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* === Tutorial Section === */
-    .tutorial-section {
-      margin: 60px auto;
-      max-width: 1200px;
-      padding: 0 20px;
-    }
-
-    .tutorial-section h2 {
-      text-align: center;
-      color: #222;
-      font-size: 2rem;
-      margin-bottom: 40px;
-      font-weight: 700;
-    }
-
+    /* === Labs === */
     .tutorial {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
       gap: 30px;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-      padding: 30px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .tutorial:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      align-items: center;
     }
 
     .tutorial .text {
       flex: 1 1 55%;
-    }
-
-    .tutorial .text h3 {
-      color: #007BFF;
-      margin-top: 0;
-    }
-
-    .tutorial .text p {
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .tutorial .right {
-      flex: 1 1 40%;
     }
 
     .tutorial img {
@@ -142,24 +124,9 @@
       border-radius: 10px;
     }
 
-    /* === About Link === */
-    .center-link {
+    /* === Connect === */
+    .center {
       text-align: center;
-      margin-top: 30px;
-    }
-
-    .center-link a {
-      display: inline-block;
-      background-color: #007BFF;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .center-link a:hover {
-      background-color: #0056b3;
-      transform: scale(1.05);
     }
 
     /* === Footer === */
@@ -168,8 +135,8 @@
       background: linear-gradient(90deg, #007BFF 0%, #0056b3 100%);
       color: white;
       padding: 20px;
-      font-size: 14px;
       margin-top: 60px;
+      font-size: 14px;
     }
 
     /* === Responsive === */
@@ -178,121 +145,127 @@
         flex-direction: column;
       }
 
-      .left, .right {
-        width: 100%;
-      }
-
-      .tutorial .text, .tutorial .right {
-        width: 100%;
-      }
-
       header h1 {
         font-size: 2rem;
       }
-
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Terraform & GitHub Actions Lab Showcase</h1>
-  </header>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <h1>Petros Kourampas</h1>
+  <p>DevOps | Terraform | GitHub Actions | AWS</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#labs">LabHub</a>
+    <a href="#about">About</a>
+    <a href="#connect">Connect</a>
+  </nav>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+  <h2>Technical Overview</h2>
 
   <div class="content">
-    <div class="left">
-      <h2>Technical Overview</h2>
+    <div class="left card">
       <p>
-        Welcome to the <strong>LabHub Showcase</strong> — a curated suite of Proof of Concept (POC) tutorials
-        demonstrating infrastructure automation using Terraform, GitHub Actions, and AWS.
+        Welcome to <strong>LabHub</strong> — a curated collection of hands-on DevOps labs
+        showcasing infrastructure automation with <strong>Terraform</strong>,
+        <strong>GitHub Actions</strong>, and <strong>AWS</strong>.
       </p>
       <p>
-        Each lab provides a guided experience into key DevOps workflows — from infrastructure provisioning
-        to CI/CD pipelines — with detailed visuals and steps to follow.
-      </p>
-      <p>
-        Explore the linked GitHub repositories for code, documentation, and implementation guidance.
-        Whether evaluating automation tools or refining your DevOps strategy, LabHub serves as your
-        hands-on reference for modern cloud infrastructure management.
+        Each lab demonstrates real-world DevOps workflows, CI/CD pipelines,
+        and cloud networking concepts using production-style tooling.
       </p>
     </div>
 
+    <div class="right card">
+      <img src="image/PoC.png" alt="Terraform GitHub Actions AWS Diagram">
+    </div>
+  </div>
+</section>
+
+<!-- ================= LABHUB ================= -->
+<section id="labs">
+  <h2>LabHub</h2>
+
+  <div class="card tutorial">
+    <div class="text">
+      <h3>Terraform + GitHub Actions – S3 Demo</h3>
+      <p>
+        Automated creation of an Amazon S3 bucket with folders and sample files
+        using Terraform and GitHub Actions.
+      </p>
+      <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab" target="_blank">
+        View Repository →
+      </a>
+    </div>
     <div class="right">
-      <img id="imagePreview" src="image/PoC.png" alt="Terraform & GitHub Actions Diagram">
+      <img src="/tutorials/s3-bucket.drawio.png" alt="AWS S3 Diagram">
     </div>
   </div>
 
-  <div class="tutorial-section">
-    <h2>LabHub</h2>
-
-    <div class="Demo tutorial">
-      <div class="text">
-        <h3>Demo</h3>
-        <p>
-          This introductory demo lab showcases how to create an Amazon S3 bucket, complete with folders and sample files.
-        </p>
-        <p>
-          <b>Please note:</b> you should delete all resources once the implementation is complete to avoid unnecessary costs.
-        </p>
-        <p>
-          Explore the complete repository on GitHub:
-          <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab" target="_blank">
-            Demo Lab
-          </a>
-        </p>
-      </div>
-      <div class="right">
-        <img src="/tutorials/s3-bucket.drawio.png" alt="AWS S3 Terraform Diagram">
-      </div>
+  <div class="card tutorial">
+    <div class="text">
+      <h3>AWS VPC Peering with Terraform</h3>
+      <p>
+        Demonstrates private connectivity between two VPCs, including route tables
+        and connectivity validation.
+      </p>
+      <a href="https://github.com/pkourampas/aws-terraform-gha-vpc-peering" target="_blank">
+        View Repository →
+      </a>
     </div>
-
-    <br>
-
-    <div class="VPC Peering tutorial">
-      <div class="text">
-        <h3>VPC Peering</h3>
-        <p>
-          This demonstration lab introduces Amazon VPC Peering and illustrates how to establish private network connectivity between two Virtual Private Clouds.
-          You will configure the peering connection, update route tables, and verify communication between resources across VPCs.
-        </p>
-        <p>
-          <b>Please note:</b> all resources should be deleted after completing the lab to avoid unnecessary charges.
-        </p>
-        <p>
-          Explore the complete repository on GitHub:
-          <a href="https://github.com/pkourampas/aws-terraform-gha-vpc-peering" target="_blank">
-            AWS VPC Peering
-          </a>
-        </p>
-      </div>
-      <div class="right">
-        <img src="/tutorials/VPC_Peering.jpg" alt="AWS VPC Peering Diagram" width="300" height="150">
-      </div>
-    </div>    
-
-
-
-    <div class="center-link">
-      <a href="about.html">Learn More About LabHub</a>
+    <div class="right">
+      <img src="/tutorials/VPC_Peering.jpg" alt="AWS VPC Peering Diagram">
     </div>
   </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 License of pkourampas | Designed for the LabHub Showcase</p>
-  </footer>
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2>About</h2>
 
-  <script>
-    function previewImage() {
-      const file = document.getElementById("imageInput")?.files?.[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = e => {
-        const imagePreview = document.getElementById("imagePreview");
-        imagePreview.src = e.target.result;
-        imagePreview.style.display = 'block';
-      };
-      reader.readAsDataURL(file);
-    }
-  </script>
+  <div class="card">
+    <p>
+      I am a cloud and DevOps enthusiast with a strong focus on infrastructure as code,
+      CI/CD automation, and scalable cloud architectures.
+    </p>
+    <p>
+      This portfolio is designed to demonstrate practical, real-world DevOps skills
+      through reproducible labs and clean infrastructure patterns.
+    </p>
+  </div>
+</section>
+
+<!-- ================= CONNECT ================= -->
+<section id="connect">
+  <h2>Connect with Me</h2>
+
+  <div class="card center">
+    <div class="badge-base LI-profile-badge"
+         data-locale="en_US"
+         data-size="medium"
+         data-theme="light"
+         data-type="VERTICAL"
+         data-vanity="petroskourampas"
+         data-version="v1">
+      <a class="badge-base__link LI-simple-link"
+         href="https://gr.linkedin.com/in/petroskourampas">
+        Petros Kourampas
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Petros Kourampas | LabHub DevOps Portfolio
+</footer>
+
 </body>
 </html>
