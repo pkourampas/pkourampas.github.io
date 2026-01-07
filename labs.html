@@ -36,16 +36,36 @@
 
     .card {
       background: white;
-      padding: 25px;
       border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 40px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      margin-bottom: 30px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .lab {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .lab img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .text {
+      flex: 1 1 55%;
+    }
+
+    .image {
+      flex: 1 1 40%;
     }
   </style>
 </head>
@@ -57,39 +77,53 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="labs.html">LabHub</a>
+    <a href="about.html">About</a>
+    <a href="connect.html">Connect</a>
   </nav>
 </header>
 
 <section>
-  <div class="card">
-    <h2>Terraform + GitHub Actions – S3 Demo</h2>
-    <p>
-      This introductory demo lab showcases how to create an Amazon S3 bucket,
-      complete with folders and sample files.
-    </p>
-    <p>
-      <strong>Please note:</strong> you should delete all resources once the
-      implementation is complete to avoid unnecessary costs.
-    </p>
-    <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab" target="_blank">
-      View GitHub Repository →
-    </a>
+
+  <div class="card lab">
+    <div class="text">
+      <h2>S3 Demo – Terraform & GitHub Actions</h2>
+      <p>
+        This introductory demo lab showcases how to create an Amazon S3 bucket,
+        complete with folders and sample files.
+      </p>
+      <p>
+        <strong>Please note:</strong> you should delete all resources once the
+        implementation is complete to avoid unnecessary costs.
+      </p>
+      <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab" target="_blank">
+        View GitHub Repository →
+      </a>
+    </div>
+    <div class="image">
+      <img src="tutorials/s3-bucket.drawio.png" alt="AWS S3 Terraform Diagram">
+    </div>
   </div>
 
-  <div class="card">
-    <h2>AWS VPC Peering with Terraform</h2>
-    <p>
-      This lab demonstrates how to establish private connectivity between two
-      Amazon VPCs using VPC Peering.
-    </p>
-    <p>
-      <strong>Please note:</strong> all resources should be deleted after
-      completing the lab to avoid unnecessary charges.
-    </p>
-    <a href="https://github.com/pkourampas/aws-terraform-gha-vpc-peering" target="_blank">
-      View GitHub Repository →
-    </a>
+  <div class="card lab">
+    <div class="text">
+      <h2>AWS VPC Peering with Terraform</h2>
+      <p>
+        Demonstrates how to establish private connectivity between two Amazon VPCs
+        using VPC Peering, route tables, and connectivity validation.
+      </p>
+      <p>
+        <strong>Please note:</strong> all resources should be deleted after
+        completing the lab to avoid unnecessary charges.
+      </p>
+      <a href="https://github.com/pkourampas/aws-terraform-gha-vpc-peering" target="_blank">
+        View GitHub Repository →
+      </a>
+    </div>
+    <div class="image">
+      <img src="tutorials/VPC_Peering.jpg" alt="AWS VPC Peering Diagram">
+    </div>
   </div>
+
 </section>
 
 </body>

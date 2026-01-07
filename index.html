@@ -6,27 +6,14 @@
   <title>Petros Kourampas | DevOps Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
   <style>
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: linear-gradient(180deg, #f8faff, #eef3ff);
       color: #333;
-    }
-
-    a {
-      color: #007BFF;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    a:hover {
-      color: #0056b3;
-      text-decoration: underline;
     }
 
     header {
@@ -41,17 +28,13 @@
       margin: 0 15px;
       font-weight: 600;
       color: white;
+      text-decoration: none;
     }
 
     section {
       max-width: 1200px;
       margin: 60px auto;
       padding: 0 20px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
     }
 
     .card {
@@ -91,9 +74,7 @@
     }
 
     @media (max-width: 768px) {
-      .content {
-        flex-direction: column;
-      }
+      .content { flex-direction: column; }
     }
   </style>
 </head>
@@ -107,63 +88,31 @@
     <a href="index.html">Home</a>
     <a href="labs.html">LabHub</a>
     <a href="about.html">About</a>
-    <a href="#connect">Connect</a>
+    <a href="connect.html">Connect</a>
   </nav>
 </header>
 
-<section id="home">
-  <h2>Technical Overview</h2>
+<section>
+  <h2 style="text-align:center;">Technical Overview</h2>
 
   <div class="content">
     <div class="left card">
       <p>
         Welcome to <strong>LabHub</strong> — a collection of hands-on DevOps labs
-        demonstrating infrastructure automation using Terraform, GitHub Actions,
+        showcasing infrastructure automation using Terraform, GitHub Actions,
         and AWS.
       </p>
       <p>
-        Each lab is designed as a Proof of Concept (PoC) and focuses on real-world
-        workflows such as CI/CD pipelines, cloud provisioning, and networking.
+        Each lab demonstrates real-world CI/CD workflows, infrastructure as code,
+        and cloud networking patterns.
       </p>
       <p>
-        Visit the <a href="labs.html">LabHub section</a> to explore all available labs.
+        Explore all labs in the <a href="labs.html">LabHub section</a>.
       </p>
     </div>
 
     <div class="right card">
       <img src="image/PoC.png" alt="Terraform GitHub Actions AWS">
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <h2>About</h2>
-  <div class="card">
-    <p>
-      I am a DevOps and cloud enthusiast with a strong interest in infrastructure
-      as code, automation, and scalable cloud architectures.
-    </p>
-    <p>
-      This portfolio is intended to showcase practical, reproducible labs that
-      reflect real-world DevOps scenarios.
-    </p>
-  </div>
-</section>
-
-<section id="connect">
-  <h2>Connect with Me</h2>
-  <div class="card" style="text-align:center;">
-    <div class="badge-base LI-profile-badge"
-         data-locale="en_US"
-         data-size="medium"
-         data-theme="light"
-         data-type="VERTICAL"
-         data-vanity="petroskourampas"
-         data-version="v1">
-      <a class="badge-base__link LI-simple-link"
-         href="https://gr.linkedin.com/in/petroskourampas">
-        Petros Kourampas
-      </a>
     </div>
   </div>
 </section>
