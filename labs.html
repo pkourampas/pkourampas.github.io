@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LabHub | DevOps Labs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #f8faff, #eef3ff);
+    }
+
+    header {
+      background: linear-gradient(90deg, #007BFF, #0056b3);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>LabHub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="labs.html">LabHub</a>
+  </nav>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Terraform + GitHub Actions – S3 Demo</h2>
+    <p>
+      This introductory demo lab showcases how to create an Amazon S3 bucket,
+      complete with folders and sample files.
+    </p>
+    <p>
+      <strong>Please note:</strong> you should delete all resources once the
+      implementation is complete to avoid unnecessary costs.
+    </p>
+    <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab" target="_blank">
+      View GitHub Repository →
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>AWS VPC Peering with Terraform</h2>
+    <p>
+      This lab demonstrates how to establish private connectivity between two
+      Amazon VPCs using VPC Peering.
+    </p>
+    <p>
+      <strong>Please note:</strong> all resources should be deleted after
+      completing the lab to avoid unnecessary charges.
+    </p>
+    <a href="https://github.com/pkourampas/aws-terraform-gha-vpc-peering" target="_blank">
+      View GitHub Repository →
+    </a>
+  </div>
+</section>
+
+</body>
+</html>

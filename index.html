@@ -3,24 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Petros Kourampas | DevOps LabHub Portfolio</title>
+  <title>Petros Kourampas | DevOps Portfolio</title>
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- LinkedIn Profile Badge Script -->
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
   <style>
-    /* === Global Styles === */
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      background: linear-gradient(180deg, #f8faff 0%, #eef3ff 100%);
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #f8faff, #eef3ff);
       color: #333;
     }
 
@@ -35,24 +29,12 @@
       text-decoration: underline;
     }
 
-    /* === Header === */
     header {
-      background: linear-gradient(90deg, #007BFF 0%, #0056b3 100%);
+      background: linear-gradient(90deg, #007BFF, #0056b3);
       color: white;
       text-align: center;
       padding: 50px 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-    header p {
-      margin: 10px 0 20px;
-      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     nav a {
@@ -61,36 +43,30 @@
       color: white;
     }
 
-    /* === Section Base === */
     section {
-      margin: 60px auto;
       max-width: 1200px;
+      margin: 60px auto;
       padding: 0 20px;
     }
 
-    section h2 {
+    h2 {
       text-align: center;
-      font-size: 2rem;
       margin-bottom: 40px;
-      color: #222;
     }
 
-    /* === Cards / Animations (Preserved) === */
     .card {
-      background-color: white;
+      background: white;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 25px;
-      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
 
-    /* === Home Layout === */
     .content {
       display: flex;
       flex-wrap: wrap;
@@ -104,49 +80,19 @@
     .right img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* === Labs === */
-    .tutorial {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .tutorial .text {
-      flex: 1 1 55%;
-    }
-
-    .tutorial img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    /* === Connect === */
-    .center {
-      text-align: center;
-    }
-
-    /* === Footer === */
     footer {
-      text-align: center;
-      background: linear-gradient(90deg, #007BFF 0%, #0056b3 100%);
+      background: linear-gradient(90deg, #007BFF, #0056b3);
       color: white;
+      text-align: center;
       padding: 20px;
       margin-top: 60px;
-      font-size: 14px;
     }
 
-    /* === Responsive === */
     @media (max-width: 768px) {
-      .content, .tutorial {
+      .content {
         flex-direction: column;
-      }
-
-      header h1 {
-        font-size: 2rem;
       }
     }
   </style>
@@ -154,100 +100,59 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
 <header>
   <h1>Petros Kourampas</h1>
   <p>DevOps | Terraform | GitHub Actions | AWS</p>
-
   <nav>
-    <a href="#home">Home</a>
-    <a href="#labs">LabHub</a>
-    <a href="#about">About</a>
+    <a href="index.html">Home</a>
+    <a href="labs.html">LabHub</a>
+    <a href="about.html">About</a>
     <a href="#connect">Connect</a>
   </nav>
 </header>
 
-<!-- ================= HOME ================= -->
 <section id="home">
   <h2>Technical Overview</h2>
 
   <div class="content">
     <div class="left card">
       <p>
-        Welcome to <strong>LabHub</strong> — a curated collection of hands-on DevOps labs
-        showcasing infrastructure automation with <strong>Terraform</strong>,
-        <strong>GitHub Actions</strong>, and <strong>AWS</strong>.
+        Welcome to <strong>LabHub</strong> — a collection of hands-on DevOps labs
+        demonstrating infrastructure automation using Terraform, GitHub Actions,
+        and AWS.
       </p>
       <p>
-        Each lab demonstrates real-world DevOps workflows, CI/CD pipelines,
-        and cloud networking concepts using production-style tooling.
+        Each lab is designed as a Proof of Concept (PoC) and focuses on real-world
+        workflows such as CI/CD pipelines, cloud provisioning, and networking.
+      </p>
+      <p>
+        Visit the <a href="labs.html">LabHub section</a> to explore all available labs.
       </p>
     </div>
 
     <div class="right card">
-      <img src="image/PoC.png" alt="Terraform GitHub Actions AWS Diagram">
+      <img src="image/PoC.png" alt="Terraform GitHub Actions AWS">
     </div>
   </div>
 </section>
 
-<!-- ================= LABHUB ================= -->
-<section id="labs">
-  <h2>LabHub</h2>
-
-  <div class="card tutorial">
-    <div class="text">
-      <h3>Terraform + GitHub Actions – S3 Demo</h3>
-      <p>
-        Automated creation of an Amazon S3 bucket with folders and sample files
-        using Terraform and GitHub Actions.
-      </p>
-      <a href="https://github.com/pkourampas/aws-terraform-gha-demo-lab" target="_blank">
-        View Repository →
-      </a>
-    </div>
-    <div class="right">
-      <img src="/tutorials/s3-bucket.drawio.png" alt="AWS S3 Diagram">
-    </div>
-  </div>
-
-  <div class="card tutorial">
-    <div class="text">
-      <h3>AWS VPC Peering with Terraform</h3>
-      <p>
-        Demonstrates private connectivity between two VPCs, including route tables
-        and connectivity validation.
-      </p>
-      <a href="https://github.com/pkourampas/aws-terraform-gha-vpc-peering" target="_blank">
-        View Repository →
-      </a>
-    </div>
-    <div class="right">
-      <img src="/tutorials/VPC_Peering.jpg" alt="AWS VPC Peering Diagram">
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
 <section id="about">
   <h2>About</h2>
-
   <div class="card">
     <p>
-      I am a cloud and DevOps enthusiast with a strong focus on infrastructure as code,
-      CI/CD automation, and scalable cloud architectures.
+      I am a DevOps and cloud enthusiast with a strong interest in infrastructure
+      as code, automation, and scalable cloud architectures.
     </p>
     <p>
-      This portfolio is designed to demonstrate practical, real-world DevOps skills
-      through reproducible labs and clean infrastructure patterns.
+      This portfolio is intended to showcase practical, reproducible labs that
+      reflect real-world DevOps scenarios.
     </p>
   </div>
 </section>
 
-<!-- ================= CONNECT ================= -->
 <section id="connect">
   <h2>Connect with Me</h2>
-
-  <div class="card center">
+  <div class="card" style="text-align:center;">
     <div class="badge-base LI-profile-badge"
          data-locale="en_US"
          data-size="medium"
@@ -264,7 +169,7 @@
 </section>
 
 <footer>
-  © 2025 Petros Kourampas | LabHub DevOps Portfolio
+  © 2025 Petros Kourampas | DevOps Portfolio
 </footer>
 
 </body>
