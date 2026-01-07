@@ -1,38 +1,118 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About - POC Tutorials</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            line-height: 1.6;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            color: #0077cc;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>About | Petros Kourampas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #f8faff, #eef3ff);
+    }
+
+    header {
+      background: linear-gradient(90deg, #007BFF, #0056b3);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #007BFF;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>About This Tutorial Series</h1>
 
-    <p>This series of <strong>Proof of Concept (POC) tutorials</strong> focuses on demonstrating how to leverage Terraform, GitHub Actions, and AWS to automate and manage infrastructure deployments, along with integrating monitoring solutions.</p>
+<header>
+  <h1>About</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="labs.html">LabHub</a>
+    <a href="about.html">About</a>
+    <a href="connect.html">Connect</a>
+  </nav>
+</header>
 
-    <p>Each scenario in the tutorial series will guide you through different lab exercises, helping you build real-world infrastructure solutions while incorporating best practices for scalability, security, and automation.</p>
+<section>
+  <div class="card">
+
+    <h2>About This Tutorial Series</h2>
+
+    <p>
+      This series of <strong>Proof of Concept (POC) tutorials</strong> focuses on
+      demonstrating how to leverage <strong>Terraform</strong>,
+      <strong>GitHub Actions</strong>, and <strong>AWS</strong> to automate and manage
+      infrastructure deployments, along with integrating monitoring solutions.
+    </p>
+
+    <p>
+      Each scenario in the tutorial series guides you through different lab
+      exercises, helping you build real-world infrastructure solutions while
+      incorporating best practices for scalability, security, and automation.
+    </p>
 
     <ul>
-        <li><strong>Terraform</strong>: Learn how to use Terraform for Infrastructure as Code (IaC), enabling you to define, provision, and manage AWS resources efficiently.</li>
-        <li><strong>GitHub Actions</strong>: Explore how to integrate Terraform with GitHub Actions to set up CI/CD pipelines for continuous integration and continuous delivery.</li>
-        <li><strong>AWS</strong>: Dive deep into AWS services like EC2, VPC, S3, and more.</li>
+      <li>
+        <strong>Terraform</strong>: Learn how to use Infrastructure as Code (IaC)
+        to define, provision, and manage AWS resources efficiently.
+      </li>
+      <li>
+        <strong>GitHub Actions</strong>: Explore how to integrate Terraform with
+        GitHub Actions to create CI/CD pipelines for continuous integration and
+        delivery.
+      </li>
+      <li>
+        <strong>AWS</strong>: Dive into core AWS services such as EC2, VPC, S3,
+        and networking components.
+      </li>
     </ul>
 
-    <p>Throughout these POCs, you’ll gain hands-on experience with real-world labs and scenarios, empowering you to automate infrastructure deployments, integrate monitoring solutions, and implement a streamlined CI/CD pipeline using modern DevOps tools.</p>
+    <p>
+      Throughout these POCs, you’ll gain hands-on experience with real-world labs
+      and scenarios, empowering you to automate infrastructure deployments and
+      implement streamlined CI/CD workflows using modern DevOps tools.
+    </p>
 
-    <!-- Link back to the homepage -->
-    <a href="index.html">← Back to Home</a>
+    <hr style="margin:40px 0; border:none; border-top:1px solid #eee;">
+
+  </div>
+</section>
+
 </body>
 </html>
