@@ -2,75 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petros Kourampas | DevOps Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="footer.css">
-
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(180deg, #f8faff, #eef3ff);
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(90deg, #007BFF, #0056b3);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    nav a {
-      margin: 0 15px;
-      font-weight: 600;
-      color: white;
-      text-decoration: none;
-    }
-
-    section {
-      max-width: 1200px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 25px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    }
-
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .left, .right {
-      flex: 1 1 48%;
-    }
-
-    .right img {
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    @media (max-width: 768px) {
-      .content { flex-direction: column; }
-    }
-  </style>
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -86,30 +25,89 @@
   </nav>
 </header>
 
-<section>
-  <h2 style="text-align:center;">Technical Overview</h2>
+<main>
 
-  <div class="content">
-    <div class="left card">
-      <p>
-        Welcome to <strong>LabHub</strong> — a collection of hands-on DevOps labs
-        showcasing infrastructure automation using Terraform, GitHub Actions,
-        and AWS.
-      </p>
-      <p>
-        Each lab demonstrates real-world CI/CD workflows, infrastructure as code,
-        and cloud networking patterns.
-      </p>
-      <p>
-        Explore all labs in the <a href="labs.html">LabHub section</a>.
-      </p>
-    </div>
+  <!-- Technical Overview -->
+  <section>
+    <h2>Technical Overview</h2>
 
-    <div class="right card">
-      <img src="image/PoC.png" alt="Terraform GitHub Actions AWS">
+    <div class="content">
+      <div class="card">
+        <p>
+          Welcome to <strong>LabHub</strong> — a collection of hands-on DevOps labs
+          showcasing infrastructure automation using Terraform, GitHub Actions,
+          and AWS.
+        </p>
+        <p>
+          Each lab demonstrates real-world CI/CD workflows, infrastructure as code,
+          and cloud networking patterns.
+        </p>
+        <p>
+          Explore all labs in the <a href="labs.html">LabHub section</a>.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="image/PoC.png" alt="Terraform GitHub Actions AWS">
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- What I Do -->
+  <section>
+    <h2>What I Do</h2>
+
+    <div class="content">
+      <div class="card">
+        <h3>Infrastructure as Code</h3>
+        <p>
+          Automate AWS infrastructure using reusable Terraform modules
+          following best practices.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>CI/CD Automation</h3>
+        <p>
+          Build GitHub Actions pipelines for validation, testing,
+          and deployment workflows.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cloud Architecture</h3>
+        <p>
+          Design secure, scalable cloud environments with
+          networking and IAM focus.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Lab -->
+  <section>
+    <h2>Featured Lab</h2>
+
+    <div class="card">
+      <h3>Terraform AWS VPC with CI/CD</h3>
+      <p>
+        End-to-end lab provisioning AWS networking using Terraform,
+        validated and deployed via GitHub Actions.
+      </p>
+      <a href="labs.html"><strong>View LabHub →</strong></a>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section>
+    <div class="card cta">
+      <h2>Let’s Connect</h2>
+      <p>Interested in my work or collaboration opportunities?</p>
+      <a href="connect.html"><strong>Connect with me →</strong></a>
+    </div>
+  </section>
+
+</main>
 
 <footer>
   © 2025 Petros Kourampas | DevOps Portfolio
